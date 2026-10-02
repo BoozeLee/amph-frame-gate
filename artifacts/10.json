@@ -1,0 +1,36 @@
+{
+ "exit_code": 0,
+ "facet": "F5",
+ "generated_by": "amph-comic/tools/artifact_publish.py",
+ "issue": 10,
+ "module_file": "frame.py",
+ "module_repo": "BoozLee/amph-frame-gate",
+ "module_repo_url": "https://github.com/BoozLee/amph-frame-gate",
+ "module_source_sha256": "228ddedc31038637c1561c8111af9805f8a0428b2839b1a0b0a2881114732c3f",
+ "plate": "art/10.jpg",
+ "plate_sha256": "8c5ee66a8e7797b9000d812fb12a83bc3706f8b08093d46570c225240a72f1b4",
+ "recipe": "frame.py <plate> --json",
+ "stdout": "{\n \"image\": \"${ART_ROOT}/art/10.jpg\",\n \"pass\": true,\n \"checks\": [\n  {\n   \"name\": \"frame\",\n   \"pass\": true,\n   \"w\": 900,\n   \"h\": 900,\n   \"ratio\": 1.0,\n   \"closest\": \"square\",\n   \"off_by\": 0.0,\n   \"logo_band_ink\": 0.3906,\n   \"logo_blankable\": true,\n   \"detail\": \"900x900 = 1.000, closest 1.000 (off by 0.000, tol 0.06); bottom 16% band ink 0.39 (ceiling 0.62)\"\n  }\n ],\n \"known_limits\": [\n  \"frame measures the aspect ratio of the file as delivered; it cannot say whether the buyer generated at that ratio or cropped into it, so a 1:1 crop of a 2:3 original passes identically.\",\n  \"the logo-band blankability ceiling (ink <= 0.62 over the bottom 16%) is calibrated on this 48-image corpus. It is a ceiling for this corpus, not a law: a legitimately dense cover will be reported unblankable.\"\n ]\n}",
+ "verdict": {
+  "checks": [
+   {
+    "closest": "square",
+    "detail": "900x900 = 1.000, closest 1.000 (off by 0.000, tol 0.06); bottom 16% band ink 0.39 (ceiling 0.62)",
+    "h": 900,
+    "logo_band_ink": 0.3906,
+    "logo_blankable": true,
+    "name": "frame",
+    "off_by": 0.0,
+    "pass": true,
+    "ratio": 1.0,
+    "w": 900
+   }
+  ],
+  "image": "${ART_ROOT}/art/10.jpg",
+  "known_limits": [
+   "frame measures the aspect ratio of the file as delivered; it cannot say whether the buyer generated at that ratio or cropped into it, so a 1:1 crop of a 2:3 original passes identically.",
+   "the logo-band blankability ceiling (ink <= 0.62 over the bottom 16%) is calibrated on this 48-image corpus. It is a ceiling for this corpus, not a law: a legitimately dense cover will be reported unblankable."
+  ],
+  "pass": true
+ }
+}
