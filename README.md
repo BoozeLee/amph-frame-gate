@@ -4,6 +4,18 @@
 
 Aspect ratio plus logo-band blankability. A cover that is the wrong ratio came from somewhere else, and the extend step cannot be trusted.
 
+## Licence -- read this first
+
+**Noncommercial.** `amph-frame-gate` is licensed under the
+[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0).
+You may use, copy, modify and distribute it for any noncommercial purpose, and
+for any commercial purpose only with a separate written grant from the copyright holder. Full text is in
+`LICENSE`.
+
+The calibration numbers this module ships were measured on a specific corpus,
+not derived from first principles. Read `## Known limits` before trusting a
+threshold -- that section is the reason the module is worth having.
+
 ## Run it
 
 ```bash
